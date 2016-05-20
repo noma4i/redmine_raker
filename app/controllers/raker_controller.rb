@@ -13,8 +13,8 @@ class RakerController < ApplicationController
         Rake::Task[t].invoke
 
         render text: "Completed rake #{t}"
-      rescue e
-        render text: e
+      rescue Exception => e
+        render text: "Failed. Redmine reported: #{e}"
       end
     else
       render text: 'No access allowed!'
