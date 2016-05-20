@@ -16,12 +16,12 @@ Clone it into under plugins folder:
   $ git clone https://github.com/noma4i/redmine_raker.git raker
 ````
 ### Configuration
-No Configuration needed. Make sure you have any admin *API access key*.
-You can get one from */my/account*
+No Configuration needed. Make sure you have any admin **API access key**.
+You can get one from **/my/account**
 
 ## Usage
 
-`http://REDMINE_URL/raker/run_task?token=YOUR_API_KEY&task=RAKE_TASK_NAME`
+**http://REDMINE_URL/raker/run_task?token=YOUR_API_KEY&task=RAKE_TASK_NAME**
 
 ```
 http://example.com/raker/run_task?token=7168ca72d5253b6e18e946b1d7506e7556c09541e&task=redmine:email:receive_imap
